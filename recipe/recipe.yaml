@@ -11,8 +11,6 @@ package:
 source:
   - url: https://pypi.org/packages/source/l/librt/librt-${{ version }}.tar.gz
     sha256: c724a884e642aa2bbad52bb0203ea40406ad742368a5f90da1b220e970384aae
-  - url: https://raw.githubusercontent.com/mypyc/librt/refs/tags/v${{ version }}/smoke_tests.py
-    sha256: a1507fc062d022fa8d7622b882b59610fcbf582480be144963db4f476c59c419
 
 build:
   number: 0
