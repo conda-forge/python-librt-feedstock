@@ -13,7 +13,7 @@ source:
     sha256: 1a4ede613941d9c3470b0368be851df6bb78ab218635512d0370b27a277a0862
 
 build:
-  number: 0
+  number: 1
   script:
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
 
@@ -37,7 +37,8 @@ tests:
       imports: librt
       pip_check: true
   - files:
-      source: smoke_tests.py
+      source:
+        - smoke_tests.py
     requirements:
       run:
         - mypy_extensions
