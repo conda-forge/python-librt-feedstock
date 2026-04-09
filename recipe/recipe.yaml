@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.8.1"
+  version: "0.9.0"
 
 package:
   name: python-librt
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/l/librt/librt-${{ version }}.tar.gz
-    sha256: be46a14693955b3bd96014ccbdb8339ee8c9346fbe11c1b78901b55125f14c73
+    sha256: a0951822531e7aee6e0dfb556b30d5ee36bbe234faf60c20a16c01be3530869d
 
 build:
   number: 0
