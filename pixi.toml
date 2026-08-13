@@ -5,7 +5,7 @@
 
 [workspace]
 name = "python-librt-feedstock"
-version = "2026.8.5"  # conda-smithy version used to generate this file
+version = "2026.8.9"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/python-librt-feedstock"
 authors = ["@conda-forge/python-librt"]
 channels = ["conda-forge"]
@@ -361,6 +361,24 @@ description = "Build python-librt-feedstock with variant win_64_python3.14.____c
 [feature.build.tasks."inspect-win_64_python3.14.____cp314t"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_python3.14.____cp314t.yaml"
 description = "List contents of python-librt-feedstock packages built for variant win_64_python3.14.____cp314t"
+[feature.build.tasks."build-win_arm64_python3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_arm64_python3.14.____cp314.yaml"
+description = "Build python-librt-feedstock with variant win_arm64_python3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-win_arm64_python3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_arm64_python3.14.____cp314.yaml"
+description = "Build python-librt-feedstock with variant win_arm64_python3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_arm64_python3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_arm64_python3.14.____cp314.yaml"
+description = "List contents of python-librt-feedstock packages built for variant win_arm64_python3.14.____cp314"
+[feature.build.tasks."build-win_arm64_python3.14.____cp314t"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_arm64_python3.14.____cp314t.yaml"
+description = "Build python-librt-feedstock with variant win_arm64_python3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."debug-win_arm64_python3.14.____cp314t"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_arm64_python3.14.____cp314t.yaml"
+description = "Build python-librt-feedstock with variant win_arm64_python3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."inspect-win_arm64_python3.14.____cp314t"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_arm64_python3.14.____cp314t.yaml"
+description = "List contents of python-librt-feedstock packages built for variant win_arm64_python3.14.____cp314t"
 
 [environments]
 build = ["build"]
