@@ -36,6 +36,8 @@ requirements:
 tests:
   - package_contents:
       strict: true
+      files:
+        - etc/conda/test-files/python-librt/**
       site_packages:
         - librt/**
         - librt-${{ version }}.dist-info/**
